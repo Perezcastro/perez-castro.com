@@ -1,0 +1,5 @@
+db.sqlite3
+*.pyc
+/base/static/images/*
+*.sh
+settings_secret.*
