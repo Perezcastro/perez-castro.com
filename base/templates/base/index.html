@@ -2,9 +2,8 @@
 {% block content %}
 {% load static %}
 <main class="wrapper">
-        
 
-        <main class="contenido">
+        <main class="index">
             <article class="flex about">
     
                 <section class="photo item">
@@ -15,11 +14,11 @@
 
                 <section class="dark description item">
                     <p class="subtitle"><span class="number">01.-</span>Sobre mi</p>
-                    <p>¿Quién soy ? ¿ Qué se hacer? ¿ Qué me gusta? O de que va esta web. Todo eso lo encontraras aquí</p>
+                    <p>¿Quién soy ? ¿ Qué se hacer? ¿ Qué me gusta? O ¿de qué va esta web? Todo eso lo encontraras aquí</p>
                 </section>
 
                 <section class="title item">
-                    <h2><a href="">Sobre mí</a></h2>
+                    <h2><a href="/aboutme">Sobre mí</a></h2>
                 </section>
 
             </article>
@@ -37,8 +36,8 @@
                 </section>
 
                 <section class="description item">
-                    <p class="subttile"><span class="number">02.-</span>Creaciones</p>
-                    <p>Mis pequeñas creaciones, ya sean de cosecha propia, tutoriales de alguién o simples pruebas de código. Normalmente el código está en mi perfil de GitHub aunque hace poco hice limpieza. :-)</p>
+                    <p class="subttlie"><span class="number">02.-</span>Creaciones</p>
+                    <p>Mis pequeñas creaciones, ya sean de cosecha propia, tutoriales de alguién o simples pruebas de código. Normalmente el código está en mi perfli de GitHub aunque hace poco hice limpieza. :-)</p>
                 </section>
 
             </article>
@@ -46,31 +45,24 @@
             <article class="flex portfolio">
                 <section class="description item">
                     <p class="subttitle"><span class="number">03.-</span>PORTFOLIO</p>
-                    <p>Estudios Reglados:</p>
                     <ul>
-                        <il>
-                            <p>Bachiller En I.E.S Fernando III EL SANTO</p>
-                        </il>
-                        <il>
-                            <p>I.T. en informática técnica por la universidad de Córdoba 2007 a 2011</p>
+                        <li>Estudios, reglados y no reglados</li>
+                        <li>Competencias y aptitudes </li>
+                        <li>Experiencia</li>
                     </ul>
-                    <p>Cursos (<a href="https://platzi.com/">Platzi.com</a>):</p>
-                    <ul>
-                        <il>Diseño web</il>
-                        <il>Amazon Web Services</il>
-                        <il>Python y Django</il><!-- Falta añadir archivo con el titulo -->
-                    </ul>
-                    <p>Experiencia profesional:</p>
-                    <ul>
-                        <il>Subdirector de limpieza Pimentel S.L , 3 años</il>
-                        <il>Programador web freelance, 2 años</il>
-                        <il>Técnico en hardware , toda la vida :-)</il>
-                        <il>Profesor de programación, mates y bases de datos, de primero de ingeniería informática y grado superior.</il>
-                    </ul>
+
+                </section>
+                
+                <section class="image item">
+                    <figure>
+                        <img src="{% static 'images/libros.png' %}">
+                    </figure>
                 </section>
 
                 <section class="dark title item">
-                    <h2>PORTFOLIO</h2>
+                    <h2>
+                        <a href="/cv">PORTFOLIO</a>
+                    </h2>
                 </section>
 
             </article>
@@ -78,37 +70,50 @@
             <article class="flex contact">
                 <section class="description item">
                     <p class="subttitle"><span class="number">04.-</span>Contacto</p>
+
+                </section>
+
+                <section class="dark title item">
+    
+                    <h2 >perezcastro @ gmail.com</h2>
+
+                </section>
+
+<!--                 <section class="form item">
+                    <form>
+                        <fieldset>
+                            <input type="emali" name="emali" placeholder="Introduce aquí tu emali">
+                        </fieldset>
+                        <input type="submit" name="enviar" class="miButton">
+                    </form>
+                </section> -->
+
+                <section class="image item">
+
                     <ul>
                         <li>
                             <a href="https://www.facebook.com/antonio.perezcastro.3" target="_blank">
-                                  <p>Facebook</p>
+                            <figure>
+                                <img src="{% static 'images/fb.png' %}">
+                            </figure>        
                             </a>
                         </li>
                         <li>
                             <a href="https://twitter.com/APC_1986" target="_blank">
-                                  <p>Twitter</p>
+                            <figure>
+                                <img src="{% static 'images/twitter.jpg' %}">
+                            </figure>        
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/Perezcastro" target="_blank">
-                                  <p>GitHub</p>
+                            <figure>
+                                <img src="{% static 'images/github.png' %}">
+                            </figure>        
                             </a>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="dark title item">
-                    <h2 >CONTACTO</h2>
-
-                </section>
-
-                <section class="form item">
-                    <form>
-                        <fieldset>
-                            <input type="email" name="email" placeholder="Introduce aquí tu email">
-                        </fieldset>
-                        <input type="submit" name="enviar" class="miButton">
-                    </form>
+                        </li
+>                    </ul>
+                    
                 </section>
 
             </article>

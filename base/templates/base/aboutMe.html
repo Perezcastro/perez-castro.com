@@ -1,0 +1,54 @@
+{% extends "base/base.html" %}
+{% block content %}
+{% load static %}
+<main class="wrapper">
+        
+
+    <article class="flex aboutMe">
+        <section class="title item">
+            <h1> Sobre mí: Antonio Pérez Castro </h1>
+        </section>
+
+
+        <section class="dark description item">
+
+            <p>Si has llegado hasta aquí es porque quieres saber quién soy y qué se hacer.
+               O estas aburrido y has entrado a cotillear… sea como sea aquí te vas a poder enterar de todo.</p>
+            <h2>
+              <p> ¿Quién es Antonio Pérez Castro? <em>¿Qué sabe hacer? </em><p>
+            </h2>
+        </section>
+
+        <section class="photo antonio">
+            <figure class="item">
+                <img src="{% static 'images/Antonio.jpg' %}" alt="Este soy yo">
+            </figure>
+        </section>
+
+        <section class="dark description item">
+
+            <p>Soy un apasionado de la informática, los perros y los drones.
+            Me encanta el diseño de aplicaciones web, y lo mío con Django fue amor a primera vista.<p>
+            <br/>
+            <p>He trabajado de muchas cosas pero he descubierto la pasión en la creación de aplicaciones web, donde puedas acceder a todo<p>
+
+            <h2>¿De qué va este Blog?</h2>
+            <p>Pues básicamente esta web es mí <em>curriculum</em>  y mi presentación al mundo.</p>
+            <p>Por una parte es un </em>blog sobre programación</em>, en especial dedicado  a Python y Django .
+            Donde pretendo escribir una serie de tutoriales de diferentes niveles donde muestro ejemplos de desarrollo de
+             algunas aplicaciones web, y temas relacionados con los mismos, como editores de texto o deployment. </p>
+
+            <p>Me sirve a mí para guardar un archivo con las cosas que me han llamado la atención o  dado algún dolor de cabeza y le
+             sirve al mundo por si alguien tiene el mismo problema, quiere aprender algo nuevo o se aburre y le interesan estos temas.</p>
+
+            <p>Y por otra parte es un pequeño <em>laboratorio</em> donde voy probando diseños, mini aplicaciones en desarrollo
+             y donde les muestro a posibles clientes lo que sé hacer o los diseños preliminares. </p>
+
+        
+        </section>
+
+    </article>
+
+</main>
+
+{% endblock %}
